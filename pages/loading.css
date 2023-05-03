@@ -1,0 +1,21 @@
+/* html elements */
+* {
+    color: #437DAF;
+}
+
+/* classes */
+.repNum {
+    font-size: 10rem;
+}
+
+.workout-tip {
+    font-size: medium;
+}
+
+.lead {
+    font-size: small;
+}
+
+.info-box {
+    background-color: #B6DAF9;
+}
