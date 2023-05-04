@@ -1,3 +1,20 @@
+:root {
+  --color-dark: #437DAF;
+  --color-light: #B6DAF9;
+}
+
+.color-dark-bg {
+  background-color: var(--color-dark);
+}
+
 body {
-  background-color: #437DAF;
+  background-color: var(--color-light);
+}
+
+#barbell-icon {
+  width: 4rem;
+}
+
+#db-press {
+  width: 50%;
 }

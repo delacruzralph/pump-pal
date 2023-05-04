@@ -11,69 +11,70 @@
   <title>Pump Pal</title>
 </head>
 
-<body class="container-fluid">
+<body class="container-fluid p-5">
   <header class="d-flex justify-content-between align-items-center">
     <h1>Pump Pal</h1>
-    <div class="checkout-workout">
-      <span>2</span>
-      <div class="checkout-icon">
-        <span>@</span>
-      </div>
+    <div class="checkout-workout d-flex flex-column align-items-center">
+      <p class="m-0">2</p>
+      <!-- TODO: Crop image -->
+      <img class="checkout-icon" id="barbell-icon" src="https://cdn-icons-png.flaticon.com/512/3412/3412862.png" alt="">
     </div>
   </header>
   <div class="search-settings my-2">
     <input type="text" class="search container-fluid rounded-pill border-0 py-1" placeholder="Search...">
     <p class="filter my-2">Filter</p>
-    <div class="filter-options my-2">
-      <button class="body-weight rounded-pill border-0">Body Weight</button>
-      <button class="machine rounded-pill border-0">Machine</button>
-      <button class="dumbbell rounded-pill border-0">Dumbbell</button>
-      <button class="barbell rounded-pill border-0">Barbell</button>
+
+    <!-- TODO: Change this so that it uses grid instead of flexbox -->
+    <div class="filter-options my-2 d-flex gap-3 align-items-center flex-wrap ">
+      <button class="body-weight rounded-pill border-0 shadow-sm">Body Weight</button>
+      <button class="machine rounded-pill border-0 color-dark-bg text-white">Machine</button>
+      <button class="dumbbell rounded-pill border-0 color-dark-bg text-white">Dumbbell</button>
+      <button class="barbell rounded-pill border-0 color-dark-bg text-white">Barbell</button>
     </div>
     <div class="categories-section">
       <p class="categorization my-3">Categorization</p>
-      <button class="categories rounded border-0">Body Parts</button>
+      <button class="categories rounded border-0 color-dark-bg text-white">Body Parts</button>
     </div>
   </div>
   <div class="exercises my-3">
     <div class="exercise-group-1">
-      <h2 class="chest" >Chest</h2>
-      <div class="chest-1 bg-light rounded">
+      <h2 class="chest">Chest</h2>
+      <div class="chest-1 bg-white rounded p-1 my-3 shadow-sm d-flex flex-column align-items-center">
         <h3 class="text-center">Bench Press</h3>
-        <img class="img-fluid" id="barbell-icon" src="https://cdn-icons-png.flaticon.com/512/3412/3412862.png" alt="">
+        <img class="img-fluid" id="db-press" src="../assets/dumbbell-press.png" alt="">
         <p class="text-center">How to lift</p>
       </div>
-      <div class="chest-2 bg-light rounded">
+      <div class="chest-2 bg-white rounded p-1 my-3 shadow-sm">
         <h3 class="text-center">Dumbbell Press</h3>
       </div>
-      <div class="chest-3 bg-light rounded">
+      <div class="chest-3 bg-white rounded p-1 my-3 shadow-sm">
         <h3 class="text-center">Chest Press Machine</h3>
       </div>
-      <div class="chest-4 bg-light rounded">
+      <div class="chest-4 bg-white rounded p-1 my-3 shadow-sm">
         <h3 class="text-center">Cable Flies</h3>
       </div>
     </div>
     <div class="exercise-group-2">
       <h2 class="back">Back</h2>
-      <div class="back-1 bg-light rounded">
+      <div class="back-1 rounded p-1 my-3 shadow-sm color-dark-bg text-white">
         <h3 class="text-center">Deadlift</h3>
       </div>
-      <div class="back-2 bg-light rounded">
+      <div class="back-2 bg-white rounded p-1 my-3 shadow-sm">
         <h3 class="text-center">Pullups</h3>
       </div>
-      <div class="back-3 bg-light rounded">
+      <div class="back-3 bg-white rounded p-1 my-3 shadow-sm">
         <h3 class="text-center">Rows</h3>
       </div>
-      <div class="back-4 bg-light rounded">
+      <div class="back-4 bg-white rounded p-1 my-3 shadow-sm">
         <h3 class="text-center">Lat Pull Down</h3>
       </div>
     </div>
     <div class="exercise-group-3">
       <h2 class="arms">Arms</h2>
-      <div class="arms-1 bg-light rounded">
+      <div class="arms-1 rounded p-1 my-3 shadow-sm color-dark-bg text-white">
         <h3 class="text-center">Dumbbell Curl</h3>
       </div>
-      <div class="arms-2 bg-light rounded">
+      <div class="arms-2 bg-white rounded p-1 my-3 shadow-sm">
         <h3 class="text-center">Triceps Extension</h3>
       </div>
     </div>
